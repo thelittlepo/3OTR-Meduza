@@ -1,15 +1,51 @@
 @import "reset.css";
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-header,
-.timestamp,
-.panel {
+header, .panel, .timestamp {
   font-family: Arial, sans-serif;
 }
 
 h3 {
   font-family: Georgia, serif;
+}
+
+body > header {
+  display: flex;
+
+  height: 45px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #f2f2f2;
+  background-color: rgb(38, 38, 38);
+
+  font-size: 13px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 21px;
+  margin-top: -6px;
+  margin-left: 15px;
+}
+
+body > header  ul {
+  display: flex;
+}
+
+body > header li {
+  padding-right: 15px;
+}
+header ul {
+ display: inline-flex;
+
+ justify-content: center;
+ align-items: center;
 }
