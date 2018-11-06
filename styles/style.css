@@ -76,3 +76,19 @@ header ul {
   position: absolute;
   right: 0px;
 }
+
+main {
+  height: 100vh;
+  padding-top: 15px;
+
+  background-color: rgb(242, 242, 242);
+}
+
+section {
+  width: 90vw;
+  margin: 0 auto;
+
+  border: 1px solid #ccc;
+  border-top: 4px solid #b88b58;
+  background-color: #fff;
+}
