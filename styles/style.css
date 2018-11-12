@@ -43,14 +43,20 @@ body > header  ul {
 }
 
 body > header li {
-  padding: 0 15px;
+  padding: 0 7px;
 }
 
 header ul {
  display: inline-flex;
 
+ padding-right: 5px;
+
  justify-content: center;
  align-items: center;
+}
+
+header nav {
+  padding-left: 45px;
 }
 
 .panel {
@@ -75,6 +81,18 @@ header ul {
 .panel button {
   position: absolute;
   right: 0px;
+
+  margin-right: 8px;
+
+  cursor: pointer;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+
+  color: #999;
+  border: none;
+
+  font-size: 13px;
+  font-weight: 500;
 }
 
 main {
@@ -85,10 +103,190 @@ main {
 }
 
 section {
-  width: 90vw;
+  width: 75vw;
   margin: 0 auto;
 
   border: 1px solid #ccc;
   border-top: 4px solid #b88b58;
   background-color: #fff;
+}
+
+nav ul li a:hover {
+  color: #999;
+}
+
+nav ul li a {
+  transition: color .20s ease-out;
+  text-decoration: none;
+
+  color: #fff;
+}
+
+.panel span {
+  margin-right: 5px;
+  margin-left: 12px;
+
+  color: #999;
+}
+
+.panel {
+  margin-left: -10px;
+
+  letter-spacing: .5px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+section header {
+  margin-top: 16px;
+  margin-left: 18px;
+
+  letter-spacing: .4px;
+  text-transform: uppercase;
+
+  color: #999;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+
+}
+
+.container {
+  display: flex;
+
+  margin-top: 12px;
+
+  align-items: stretch;
+  flex-grow: 1;
+  flex-flow: row nowrap;
+}
+
+.card-is-important {
+  display: block;
+  flex-direction: column;
+
+  width: 50%;
+  margin-right: 15px;
+  padding: 20px 18px 21px;
+
+  border-bottom: 0;
+
+  flex-grow: 1;
+
+}
+
+.card-is-important h3 {
+  width: 100%;
+
+  font-size: 32px;
+  line-height: 36px;
+
+  flex-grow: 1;
+}
+
+.card-is-important .timestamp {
+  position: relative;
+
+  display: inline-flex;
+
+  margin-top: 84px;
+  padding: 100px 18px 21px;
+
+  color: #999;
+
+  font-size: 12px;
+  line-height: 14px;
+
+}
+
+.timestamp img {
+  margin-right: 5px;
+}
+
+.container-right {
+  display: flex;
+
+  width: 50%;
+
+  flex-flow: row wrap;
+}
+
+.card, .card2, .card3, .card4 {
+  display: inline-flex;
+  flex-direction: column;
+
+  width: 50%;
+  margin-top: 16px;
+  padding: 15px 15px 14px;
+
+  font-size: 18px;
+  line-height: 22px;
+
+  flex-grow: 1;
+
+}
+
+.card3, .card4 {
+  margin-bottom: 21px;
+}
+
+.card .timestamp {
+  position: relative;
+
+  display: inline-flex;
+
+  margin-top: 33px;
+
+  color: #999;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  flex-flow: row wrap;
+}
+.card2 .timestamp {
+  position: relative;
+
+  display: inline-flex;
+
+  margin-top: 12px;
+
+  color: #999;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  flex-flow: row wrap;
+}
+
+.card3 .timestamp {
+  position: relative;
+
+  display: inline-flex;
+
+  margin-top: 34px;
+
+  color: #999;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  flex-flow: row wrap;
+}
+
+.card4 .timestamp {
+  position: relative;
+
+  display: inline-flex;
+
+  margin-top: 34px;
+
+  color: #999;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  flex-flow: row wrap;
 }
