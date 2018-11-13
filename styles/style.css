@@ -139,9 +139,6 @@ nav ul li a {
 }
 
 section header {
-  margin-top: 16px;
-  margin-left: 18px;
-
   letter-spacing: .4px;
   text-transform: uppercase;
 
@@ -156,24 +153,31 @@ section header {
 .container {
   display: flex;
 
-  margin-top: 12px;
+  padding: 0 18px 18px;
 
   align-items: stretch;
-  flex-grow: 1;
   flex-flow: row nowrap;
 }
 
+.top-stories {
+ height: 370px
+}
+
+.top-stories__header {
+  margin-top: 16px;
+  margin-left: 18px;
+}
+
 .card-is-important {
-  display: block;
+  display: flex;
   flex-direction: column;
 
   width: 50%;
+  height: 100%;
+  margin-top: 18px;
   margin-right: 15px;
-  padding: 20px 18px 21px;
 
   border-bottom: 0;
-
-  flex-grow: 1;
 
 }
 
@@ -183,16 +187,11 @@ section header {
   font-size: 32px;
   line-height: 36px;
 
-  flex-grow: 1;
+  flex: 1;
 }
 
 .card-is-important .timestamp {
-  position: relative;
-
-  display: inline-flex;
-
-  margin-top: 84px;
-  padding: 100px 18px 21px;
+  margin-top: 12px;
 
   color: #999;
 
@@ -218,23 +217,16 @@ section header {
   flex-direction: column;
 
   width: 50%;
-  margin-top: 16px;
-  padding: 15px 15px 14px;
+  height: 140px;
+  margin-top: 15px;
+  padding: 15px 25px 14px;
 
   font-size: 18px;
   line-height: 22px;
 
-  flex-grow: 1;
-
-}
-
-.card3, .card4 {
-  margin-bottom: 21px;
 }
 
 .card .timestamp {
-  position: relative;
-
   display: inline-flex;
 
   margin-top: 33px;
@@ -247,8 +239,6 @@ section header {
   flex-flow: row wrap;
 }
 .card2 .timestamp {
-  position: relative;
-
   display: inline-flex;
 
   margin-top: 12px;
@@ -262,8 +252,6 @@ section header {
 }
 
 .card3 .timestamp {
-  position: relative;
-
   display: inline-flex;
 
   margin-top: 34px;
@@ -277,8 +265,6 @@ section header {
 }
 
 .card4 .timestamp {
-  position: relative;
-
   display: inline-flex;
 
   margin-top: 34px;
